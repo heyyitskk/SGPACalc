@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>4th Sem SGPA</title>
+    <style>
+      input {
+        font-size: 15px;
+        background-color: antiquewhite;
+        padding: 2px;
+      }
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .calculator {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* min-height: 100vh; */
+      }
+      .disc {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        color: brown;
+      }
+      h1 {
+        color: cadetblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>SGPA CALCULATOR (4th SEM)</h1>
+    <form class="calculator">
+      <input type="number" placeholder="21**41" id="41" required />
+      <input type="number" placeholder="21**481" id="481" required />
+      <input type="number" placeholder="21**42" id="42" required /><input
+        type="number"
+        placeholder="21**43"
+        id="43"
+        required
+      /><input type="number" placeholder="21**44" id="44" required /><input
+        type="number"
+        placeholder="21**45"
+        id="45"
+        required
+      /><input type="number" placeholder="21**46" id="46" required /><input
+        type="number"
+        placeholder="21**47"
+        id="47"
+        required
+      /><input type="number" placeholder="21UHV49" id="U49" required /><input
+        type="number"
+        placeholder="21INT49"
+        id="I49"
+        required
+      />
+      <div>
+        <button id="calc" type="submit">calc</button>
+        <button type="reset" id="reset">reset</button>
+      </div>
+      <div class="res" id="res"></div>
+    </form>
+    <div class="disc">*Disclaimer: Doesn't calculate for failed subjects</div>
+    <script src="index.js"></script>
+  </body>
+</html>
